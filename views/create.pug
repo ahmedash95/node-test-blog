@@ -1,0 +1,12 @@
+html
+  head
+    title= title
+  body
+    form(method='POST' action='/admin/posts')
+          div.form-group
+            label(for='title') title:
+            input#name.form-control(type='text', placeholder='first and last' name='title')
+          div.form-group
+            label(for='content') content:
+            textarea#email.form-control(placeholder='content' name='content')
+          button.btn.btn-primary(type='submit') Sign up
